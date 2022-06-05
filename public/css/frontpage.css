@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke;
+    width: 100vw;
+    height: 100vh;
+
+}
+.top-bar{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid black;
+
+}
+.logo{
+    width: 50%;
+}
+.top-buttons{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+.top-buttons button{
+    background: black;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    width: 25%;
+    height: 35%;
+    color: white;
+    font: normal normal normal 20px/47px Segoe UI;
+    margin: 3em;
+    line-height: 2.5em;
+}
+
+.middle-space{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+.middle-space p{
+    text-align: center;
+    font: normal normal normal 117px/137px Cambria;
+}
+.middle-space button{
+    width: 30%;
+    background: black;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    text-align: center;
+    font: normal normal normal 51px/68px Segoe UI;
+    letter-spacing: 0px;
+    color: white;
+
+}
+button:hover {
+    color: greenyellow;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-device-width: 420px) {
+    .container .top-bar{
+        flex-direction: column;
+    }
+    .logo {
+        width: 100%;
+    }
+    .top-buttons{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .top-buttons button{
+        font-size: 50px;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .middle-space button{
+        height: 10%;
+        width: 60%;
+    }
+    img {
+        width: 100%;
+        border-bottom: 2px solid black;
+    }
+}

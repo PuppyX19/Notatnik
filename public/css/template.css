@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header{
+    border-bottom: 2px solid black;
+}
+
+nav {
+    height: 100%;
+    border-right: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 20%;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+section{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+button {
+    background: black;
+    border-radius: 19px;
+    width: 75%;
+    color: white;
+    font: normal normal normal 25px/47px Segoe UI;
+    margin: 1em;
+    line-height: 2.5em;
+}
+
+.content p{
+    font-size: 80px;
+}
+
+button:hover {
+    color: greenyellow;
+    cursor: pointer;
+}
+
+@media only screen and (max-device-width: 420px) {
+    main{
+        flex-direction: column;
+    }
+    nav{
+        flex-wrap: wrap;
+        border-right: none;
+        width: 100%;
+        border-bottom: 1px solid black;
+        height: 15%;
+
+    }
+    nav .core-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    section{
+        height: 85%;
+    }
+    button{
+        width: 100%;
+        margin: 5px 0;
+        font-size: 50px;
+    }
+    header img {
+        width: 100%;
+    }
+
+}

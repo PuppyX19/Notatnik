@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: whitesmoke;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 50%;
+    text-align: center;
+}
+
+.register-container {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 40vh;
+
+    background: #00000071 0% 0% no-repeat padding-box;
+    border: 1px solid #030303;
+    border-radius: 33px;
+}
+
+button {
+    background: black;
+    border: 1px solid #000000;
+    border-radius: 19px;
+
+    width: 50%;
+    height: 15%;
+    color: white;
+    font: normal normal normal 25px/47px Segoe UI;
+    margin: 1em;
+    line-height: 2.5em;
+}
+
+button:hover {
+    color: greenyellow;
+    cursor: pointer;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding: 1em;
+    margin: 1em;
+    width: 50%;
+}
+input::placeholder{
+    color:black;
+}
+.not-valid {
+    border: 3px solid red;
+    border-radius: 1em;
+    box-shadow: 0 0 0.2em red;
+    outline: none;
+}
+
+@media only screen and (max-device-width: 420px) {
+    .container {
+        flex-direction: column;
+    }
+
+
+    .message{
+        font-size: 55px;
+    }
+    .logo {
+        width: 100%;
+        height: 30%;
+    }
+
+    .register-container {
+        width: 100%;
+        height: 40%;
+    }
+
+    form {
+        height: auto;
+        margin: auto;
+    }
+    
+    input, button{
+        font-size: 34px;
+    }
+
+    img {
+        font-size: 20px;
+        margin: 2em;
+    }
+}

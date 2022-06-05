@@ -1,0 +1,20 @@
+section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+form{
+    width: 50%;
+}
+button #logout-button{
+    width: 100%;
+}
+
+@media only screen and (max-device-width: 420px) {
+    section, form {
+        width: 100%;
+    }
+    form {
+        height: 25%;
+    }
+}

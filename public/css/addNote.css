@@ -1,0 +1,57 @@
+section{
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+}
+
+input, textarea{
+    background-color: transparent;
+    border: none;
+    color: black;
+    border-bottom: 1px solid gray;
+    padding: 1em;
+    margin: 1em;
+    width: 50%;
+}
+input::placeholder, textarea::placeholder{
+    color:black;
+}
+textarea{
+    height: 50%;
+}
+#add-button{
+    width: 30%;
+}
+.not-valid {
+    border: 3px solid red;
+    border-radius: 1em;
+    box-shadow: 0 0 0.2em red;
+    outline: none;
+}
+@media only screen and (max-device-width: 420px){
+    section{
+        width: 100%;
+    }
+    input, textarea{
+        width: 100%;
+        font-size: 45px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    #add-button{
+        font-size: 55px;
+        height: 15%;
+        width: 85%;
+    }
+    .message{
+        font-size: 55px;
+    }
+
+}
